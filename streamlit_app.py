@@ -43,9 +43,9 @@ with tab2:
     st.header("🤖 Model Evaluation & Prediction")
 
     # Example: Load trained models (from pickle)
-    with open("logistic_model.pkl", "rb") as f:
+    with open("reg_modelsl", "rb") as f:
          logistic_model = pickle.load(f)
-     with open("randomforest_model.pkl", "rb") as f:
+     with open("reg_models", "rb") as f:
         rf_model = pickle.load(f)
 
     model_choice = st.selectbox("Select Model", ["Logistic Regression", "Random Forest"])
